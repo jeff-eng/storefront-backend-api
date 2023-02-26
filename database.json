@@ -6,4 +6,4 @@
       "user": {"ENV": "POSTGRES_USER"},
       "password": {"ENV": "PASSWORD"}
     }
-  }
+}
