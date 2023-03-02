@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/server.js",
-    "dev": "nodemon ./src/server.ts",
+    "dev": "nodemon",
     "test": "jasmine-ts --config=jasmine.json"
   },
   "repository": {
@@ -22,16 +22,21 @@
   "homepage": "https://github.com/jeff-eng/storefront-backend-api#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "pg": "^8.9.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/jasmine": "^4.3.1",
     "@types/node": "^18.14.0",
+    "@types/pg": "^8.6.6",
     "@types/supertest": "^2.0.12",
+    "db-migrate": "^0.11.13",
+    "db-migrate-pg": "^1.2.2",
     "jasmine": "^4.5.0",
     "jasmine-spec-reporter": "^7.0.0",
     "jasmine-ts": "^0.4.0",
+    "nodemon": "^2.0.20",
     "rimraf": "^4.1.2",
     "supertest": "^6.3.3",
     "ts-node": "^10.9.1",
